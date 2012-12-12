@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige"
+    tools:context=".AddActivity" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/beige"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.56"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:paddingTop="@dimen/t"
+                android:src="@drawable/upnote_logo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.76"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/t"
+            android:paddingRight="@dimen/t" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/five"
+                android:text="Remove a course:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/brown"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/ten"
+                android:text="Only 5 courses allowed in UpNote*"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/brown" />
+
+            <Spinner
+                android:id="@+id/currentcoursespinner"
+                android:layout_width="280dp"
+                android:layout_height="58dp"
+                android:background="@drawable/scroll"
+                android:paddingLeft="@dimen/ten"
+                android:prompt="@string/selectcourse"
+                android:textColor="@color/brown" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/ten"
+                android:paddingTop="@dimen/fifty"
+                android:text="Add a course:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/brown"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/addcoursetext"
+                    android:layout_width="189dp"
+                    android:layout_height="61dp"
+                    android:layout_weight="0.99"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:hint="Enter a course name"
+                    android:paddingLeft="@dimen/ten"
+                    android:textColorHint="@color/black" />
+
+                <Button
+                    android:id="@+id/addcoursebutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.01"
+                    android:background="@color/brown"
+                    android:onClick="addCourse"
+                    android:text="ADD"
+                    android:textColor="@color/beige" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_weight="0.99"
+        android:paddingBottom="@dimen/ten"
+        android:paddingRight="@dimen/ten"
+        android:text="* stop overachieving"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/brown" />
+
+</RelativeLayout>

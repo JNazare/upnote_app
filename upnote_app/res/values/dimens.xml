@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small">100dp</dimen>
+    <dimen name="thirty">30dp</dimen>
+    <dimen name="ten">10dp</dimen>
+    <dimen name="med">20px</dimen>
+    <dimen name="twentyfive">25px</dimen>
+    <dimen name="two">2dp</dimen>
+    <dimen name="twen">25px</dimen>
+    <dimen name="forty">40px</dimen>
+    <dimen name="fifty">50dp</dimen>
+    <dimen name="tt">30px</dimen>
+    <dimen name="t">20dp</dimen>
+    <dimen name="five">5dp</dimen>
+    <dimen name="twentyf">20px</dimen>
+    <dimen name="ttt">20dp</dimen>
+</resources>

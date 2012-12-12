@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/beige"
+    android:gravity="center_horizontal|top"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_weight="0.13"
+        android:gravity="bottom|center_horizontal"
+        android:paddingTop="@dimen/two" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxHeight="@dimen/small"
+            android:paddingTop="@dimen/ten"
+            android:src="@drawable/upnote_logo" />
+
+        <Button
+            android:id="@+id/addbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:clickable="false"
+            android:longClickable="false"
+            android:text=" + "
+            android:textColor="@color/beige"
+            android:textSize="@dimen/med" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/logged_in_display"
+        android:layout_width="fill_parent"
+        android:layout_height="257dp"
+        android:layout_weight="0.36"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/thirty"
+        android:paddingRight="@dimen/thirty" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/ten" >
+
+            <Button
+                android:id="@+id/course1button"
+                android:layout_width="179dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.15"
+                android:background="@color/brown"
+                android:text="@string/course1"
+                android:textColor="@color/beige"
+                android:textSize="@dimen/twentyfive" />
+
+            <Button
+                android:id="@+id/class1_photo_button"
+                android:layout_width="wrap_content"
+                android:layout_height="47dp"
+                android:layout_weight="0.33"
+                android:background="@color/brown"
+                android:drawableLeft="@drawable/snap"
+                android:textSize="@dimen/twentyfive" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/ten" >
+
+            <Button
+                android:id="@+id/course2button"
+                android:layout_width="162dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.61"
+                android:background="@color/brown"
+                android:text="@string/course2"
+                android:textColor="@color/beige"
+                android:textSize="@dimen/twentyfive" />
+
+            <Button
+                android:id="@+id/class2_photo_button"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_weight="0.37"
+                android:background="@color/brown"
+                android:drawableLeft="@drawable/snap"
+                android:textSize="@dimen/twentyfive" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/ten" >
+
+            <Button
+                android:id="@+id/course3button"
+                android:layout_width="158dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.88"
+                android:background="@color/brown"
+                android:text="@string/course3"
+                android:textColor="@color/beige"
+                android:textSize="@dimen/twentyfive" />
+
+            <Button
+                android:id="@+id/class3_photo_button"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_weight="0.21"
+                android:background="@color/brown"
+                android:drawableLeft="@drawable/snap"
+                android:textSize="@dimen/twentyfive" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/ten" >
+
+            <Button
+                android:id="@+id/course4button"
+                android:layout_width="156dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.14"
+                android:background="@color/brown"
+                android:text="@string/course4"
+                android:textColor="@color/beige"
+                android:textSize="@dimen/twentyfive" />
+
+            <Button
+                android:id="@+id/class4_photo_button"
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:layout_weight="0.03"
+                android:background="@color/brown"
+                android:drawableLeft="@drawable/snap"
+                android:textSize="@dimen/twentyfive" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/course5button"
+                android:layout_width="156dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.81"
+                android:background="@color/brown"
+                android:text="@string/course5"
+                android:textColor="@color/beige"
+                android:textSize="@dimen/twentyfive" />
+
+            <Button
+                android:id="@+id/class5_photo_button"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_weight="0.19"
+                android:background="@color/brown"
+                android:drawableLeft="@drawable/snap"
+                android:textSize="@dimen/twentyfive" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|right" >
+
+            <Button
+                android:id="@+id/auth_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:clickable="false"
+                android:longClickable="false"
+                android:text="  Link  "
+                android:textColor="@color/beige" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+	      
